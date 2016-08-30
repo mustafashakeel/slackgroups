@@ -1,7 +1,7 @@
 // alert("ddddd");
 require.config({
 	paths:{
-		jquery:'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js'
+		"jquery": "//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min"
 	}
 });
 require(['app'],function(app){

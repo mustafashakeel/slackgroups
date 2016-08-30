@@ -1,0 +1,23 @@
+{
+  "name": "slackgroups",
+  "version": "1.0.0",
+  "description": "Slack Groups\r -------------",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mustafashakeel/slackgroups.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mustafashakeel/slackgroups/issues"
+  },
+  "homepage": "https://github.com/mustafashakeel/slackgroups#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  }
+}
