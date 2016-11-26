@@ -1,15 +1,15 @@
 define(['jquery'],function($){
 
 //$var ="asdfadsfadad";
-alert('script');
-alert($('#cool'));
+console.log('script');
+console.log($('#cool'));
 
 });
 
 
 function test(){
 
-	alert("test inside script");
+	console.log("test inside script");
 };
 
 // define(function(){
