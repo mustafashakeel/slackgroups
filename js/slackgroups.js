@@ -1,4 +1,16 @@
-// Freelancer Theme JavaScript
+// Slackgroups Theme JavaScript
+// require.config({
+//     shim : {
+//         "bootstrap" : { "deps" :['jquery'] }
+//     },
+//     paths:{
+//         jquery:'../vendor/jquery/jquery.min',
+//         bootstrap:'../vendor/jquery/bootstrap.min',
+//         easing:'https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js',
+//         jqueryUI: 'https://code.jquery.com/ui/1.12.1/jquery-ui.js',
+//         bsValidation:'../vendor/jquery/jqBootstrapValidation'
+//     }
+//  });
 
 (function($) {
     "use strict"; // Start of use strict
@@ -40,5 +52,14 @@
             $(this).removeClass("floating-label-form-group-with-focus");
         });
     });
+     $('#accordion').find('.accordion-toggle').click(function(){
+
+          //Expand or collapse this panel
+          $(this).next().slideToggle('fast');
+
+          //Hide the other panels
+          $(".accordion-content").not($(this).next()).slideUp('fast');
+
+        });
 
 })(jQuery); // End of use strict

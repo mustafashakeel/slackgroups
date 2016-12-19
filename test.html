@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+	
+</head>
+<body>
+
+
+
+<div id="photos">
+
+	
+</div>
+	<script>
+		var root = 'https://jsonplaceholder.typicode.com';
+		var photos = {},
+		images="";
+
+$.ajax({
+  url: root + '/photos',
+  method: 'GET'
+}).then(function(data) {
+ data.forEach(function(elements){
+
+ 	// images += '<img src="'+elements.thumbnailUrl+'"/>';
+ 	// console.log(" Images !!!",images);
+ 	// $('#photos').html(images);
+ 	console.log(elements.thumbnailUrl);
+
+ 	// console.log(elements);
+ });
+
+ photos = data;
+});
+	</script>
+</body>
+</html>
