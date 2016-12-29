@@ -62,4 +62,65 @@
 
         });
 
+
+          $('#accordion1').find('.accordion-toggle').click(function(){
+
+          //Expand or collapse this panel
+          $(this).next().slideToggle('fast');
+
+          //Hide the other panels
+          $(".accordion-content").not($(this).next()).slideUp('fast');
+
+        });
+           $('#accordion2').find('.accordion-toggle').click(function(){
+
+          //Expand or collapse this panel
+          $(this).next().slideToggle('fast');
+
+          //Hide the other panels
+          $(".accordion-content").not($(this).next()).slideUp('fast');
+
+        });
+            $('#accordion3').find('.accordion-toggle').click(function(){
+
+          //Expand or collapse this panel
+          $(this).next().slideToggle('fast');
+
+          //Hide the other panels
+          $(".accordion-content").not($(this).next()).slideUp('fast');
+
+        });
+             $('#accordion4').find('.accordion-toggle').click(function(){
+
+          //Expand or collapse this panel
+          $(this).next().slideToggle('fast');
+
+          //Hide the other panels
+          $(".accordion-content").not($(this).next()).slideUp('fast');
+
+        });
+
+              $('#accordion5').find('.accordion-toggle').click(function(){
+
+          //Expand or collapse this panel
+          $(this).next().slideToggle('fast');
+
+          //Hide the other panels
+          $(".accordion-content").not($(this).next()).slideUp('fast');
+
+        });
+ $('#accordion6').find('.accordion-toggle').click(function(){
+
+          //Expand or collapse this panel
+          $(this).next().slideToggle('fast');
+
+          //Hide the other panels
+          $(".accordion-content").not($(this).next()).slideUp('fast');
+
+        });
+
+
+
+
+
 })(jQuery); // End of use strict
